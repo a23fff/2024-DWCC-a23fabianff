@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e293b;
+    color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #334155;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #1e293b;
+    color: #f3f4f6;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+button {
+    background-color: #00ffff;
+    color: #1e293b;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00e6e6;
+}
+
+#lista-container {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #1e293b;
+}
+
+#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista li {
+    background-color: #475569;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #64748b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#lista li button {
+    background-color: #dc2626;
+    color: #f3f4f6;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+#lista li button:hover {
+    background-color: #af1515;
+}
+
+.borrarTodo-button {
+    background-color: #dc2626;
+    color: #f3f4f6;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.borrarTodo-button:hover {
+    background-color: #af1515;;
+}

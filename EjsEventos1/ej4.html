@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio 4</title>
+    <style>
+      #opciones-menu {
+        padding: 0;
+        margin-top: 5px;
+      }
+      #titulo-menu {
+        user-select: none;
+        padding: 10px;
+        width: min-content;
+        white-space: nowrap;
+      }
+      #titulo-menu:hover {
+        text-decoration: underline;
+      }
+      .nomostrar {
+        display: none;
+      }
+      .mostrar {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor-menu">
+      <div id="titulo-menu">Sweeties (click me)!</div>
+      <ul id="opciones-menu" class="nomostrar">
+        <li>&emsp;Cake</li>
+        <li>&emsp;Donut</li>
+        <li>&emsp;Honey</li>
+      </ul>
+    </div>
+
+    <script>
+      const tituloMenu = document.getElementById("titulo-menu");
+      const opcionesMenu = document.getElementById("opciones-menu");
+
+      tituloMenu.addEventListener("click", () => {
+        opcionesMenu.classList.toggle("nomostrar")
+
+        // if (opcionesMenu.classList.contains("nomostrar")) {
+        // //   opcionesMenu.classList.remove("nomostrar");
+        // //   opcionesMenu.classList.add("mostrar");
+        // opcionesMenu.classList.toggle("nomostrar")
+        // } else {
+        // //   opcionesMenu.classList.remove("mostrar");
+        // //   opcionesMenu.classList.add("nomostrar");
+        // opcionesMenu.classList.toggle("nomostrar")
+        // }
+      });
+    </script>
+  </body>
+</html>

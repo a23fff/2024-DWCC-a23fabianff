@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Árbol Jerárquico</title>
+  </head>
+  <body>
+    <div id="tree-container">
+        
+    </div>
+
+    <script>
+      const arbore = {
+        Fish: {
+          trout: {},
+          salmon: {},
+        },
+        Tree: {
+          Huge: {
+            sequoia: {},
+            oak: {},
+          },
+          Flowering: {
+            "apple tree": {},
+            magnolia: {},
+          },
+        },
+      };
+
+      function createTree(data) {
+        const ul = document.createElement("ul");
+
+        for (const key in data) {
+          const li = document.createElement("li");
+          li.textContent = key;
+
+          const subtree = createTree(data[key]);
+          if (subtree) li.append(subtree);
+
+          ul.append(li);
+        }
+
+        return ul.childElementCount ? ul : null;
+      }
+
+      const treeContainer = document.getElementById("tree-container");
+      treeContainer.append(createTree(arbore));
+    </script>
+  </body>
+</html>

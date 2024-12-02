@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2: Añadir Texto a Lista</title>
+</head>
+<body>
+    <input type="text" id="entrada-texto" placeholder="Introduzca texto">
+    <button id="boton-agregar">Añadir a lista</button>
+    
+    <ul id="lista-elementos">
+        <!-- Vacía ata que se engadan os elementos -->
+    </ul>
+
+    <script>
+        // Obter entrada, botón e lista
+        const entradaTexto = document.getElementById('entrada-texto');
+        const botonAgregar = document.getElementById('boton-agregar');
+        const listaElementos = document.getElementById('lista-elementos');
+
+        // Engadir detector de eventos de clic ao botón
+        botonAgregar.addEventListener('click', () => {
+            // Obter o valor da entrada
+            const texto = entradaTexto.value.trim();
+            
+            if (texto) { // Engadir solo se ten texto
+                const elementoLista = document.createElement('li');
+                elementoLista.textContent = texto;
+                
+                listaElementos.append(elementoLista);
+                
+                entradaTexto.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserir li's</title>
+  </head>
+  <body>
+    <ul id="listaULExercicio5">
+      <li id="one">1</li>
+      <li id="two">4</li>
+    </ul>
+    <script>
+      // Inserir elementos entre dous <li>
+      const one = document.getElementById("one");
+      const two = document.getElementById("two");
+      one.insertAdjacentHTML("afterend", "<li>2</li><li>3</li>");
+    </script>
+  </body>
+</html>

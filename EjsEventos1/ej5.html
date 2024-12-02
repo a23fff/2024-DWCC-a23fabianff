@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <img id="tigre" src="tigreee.png" alt="tigreton" draggable="true">
+
+    <script>
+        const imagen = document.getElementById('tigre');
+
+        const registrarEvento = (nombreEvento) => {
+            console.log(`Evento ocurrido: ${nombreEvento}`);
+        };
+
+        imagen.addEventListener('click', () => registrarEvento('clic'));
+        imagen.addEventListener('dblclick', () => registrarEvento('doble clic'));
+        imagen.addEventListener('contextmenu', () => registrarEvento('menú contextual'));
+        imagen.addEventListener('mousedown', () => registrarEvento('botón del ratón presionado'));
+        imagen.addEventListener('mouseup', () => registrarEvento('botón del ratón soltado'));
+        imagen.addEventListener('wheel', () => registrarEvento('rueda'));
+        imagen.addEventListener('mouseover', () => registrarEvento('ratón sobre'));
+        imagen.addEventListener('mouseout', () => registrarEvento('ratón fuera'));
+        imagen.addEventListener('dragstart', () => registrarEvento('inicio de arrastre'));
+        imagen.addEventListener('drag', () => registrarEvento('arrastre'));
+        imagen.addEventListener('dragend', () => registrarEvento('fin de arrastre'));
+    
+    </script>
+</body>
+</html>

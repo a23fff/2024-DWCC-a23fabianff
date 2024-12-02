@@ -1,0 +1,1 @@
+### O texto segue aparecendo porque está fóra da estrutura correcta da táboa. Nunha táboa, todo o contido debe estar dentro de celas (<td>). Para solucionalo, o texto debería estar dentro dunha cela ou eliminarse.
