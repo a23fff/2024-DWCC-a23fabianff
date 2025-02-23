@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xestión de Pedidos</title>
+</head>
+<body>
+    <h1>Xestión de Pedidos</h1>
+    
+    <form id="clienteForm">
+        <input type="text" id="telefono" placeholder="Introduza o teléfono" required>
+        <button type="submit">Buscar Cliente</button>
+    </form>
+
+    <div id="clienteInfo" style="display: none;">
+        <h2>Datos do Cliente</h2>
+        <p id="clienteNome"></p>
+        <p id="clienteEnderzo"></p>
+        <p id="clientePedidoTipico"></p>
+
+        <form id="pedidoForm" style=display:none;>
+            <textarea id="descricionPedido" rows="4" cols="50"></textarea>
+            <button type="submit">Realizar Pedido</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

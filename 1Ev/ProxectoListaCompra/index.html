@@ -11,13 +11,13 @@
     <div class="container">
         <h1>Lista da Compra</h1>
         <input type="text" id="itemInput" placeholder="Escribe un elemento">
-        <button onclick="agregarElemento()">Engadir</button>
+        <button id="addButton">Engadir</button>
         <br>
         <input type="text" id="filtroInput" placeholder="Filtro">
         <div id="lista-container">
             <ul id="lista"></ul>
         </div>
-        <button class="borrarTodo-button" onclick="borrarTodos()">Borrar Todo</button>
+        <button id="clearAllButton" class="borrarTodo-button">Borrar Todo</button> <!-- Removido onclick -->
     </div>
     <script src="listacompra.js" defer></script>
 </body>

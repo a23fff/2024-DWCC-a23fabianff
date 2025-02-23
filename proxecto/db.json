@@ -1,0 +1,24 @@
+{
+  "clientes": [
+    {
+      "telefono": "123456789",
+      "enderezo": "Rúa Principal 1, Cidade",
+      "pedidoTipico": "Pizza margarita"
+    },
+    {
+      "telefono": "987654321",
+      "enderezo": "Avenida Central 2, Vila",
+      "pedidoTipico": "Hamburguesa con patacas"
+    }
+  ],
+  "pedidos": [
+    {
+      "telefonoCliente": "123456789",
+      "descricion": "Pizza margarita grande"
+    },
+    {
+      "telefonoCliente": "987654321",
+      "descricion": "Hamburguesa doble con patatas"
+    }
+  ]
+}
